@@ -1,0 +1,5 @@
+docker-compose up -d                        // старт
+docker-compose down                         // стоп
+docker-compose build                        // собрать
+docker-compose exec -w /www node bash       // зайти в контейнер node в директорию www и запустить bash
+docker stop $(docker ps -aq)                // docker найдет все работающие контейнеры, подставит в переменную их ID и выполнит stop для всех
